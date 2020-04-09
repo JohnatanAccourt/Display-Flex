@@ -1,0 +1,101 @@
+.flex{
+    height: 30vh;
+    display: flex;
+
+    flex-direction: row-reverse;  
+    /*o eixo inicia pelo lado direito */
+
+    flex-direction: column-reverse;
+    /* o eixo inicia na bottom da página para o topo */
+
+    flex-direction: column;
+    /* o eixo inicia pelo topo da página para baixo */
+
+    flex-direction: row; 
+    /* o eixo inicia pelo lado esquerdo (valor padrão) */
+
+
+
+
+    flex-wrap: wrap;
+    /* Usado para quebrar a linha ou seja passar o restante que não coube para outra linha 
+
+    |detalhe que a partir do momento em que ele quebra a linha é como se fosse um novo container|
+     */
+
+    flex-wrap: nowrap;
+    /* Usado para manter todos os elementos em uma só linha fazendo com que eles encolham */
+
+
+
+
+    flex-flow: row wrap;
+    /* Essa propriedade nos permite com que juntamos a "flex-direction - primeiro valor" e "flex-wrap - segundo valor" */
+}
+
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: royalblue;
+    color: seashell;
+    margin: 4px;
+}
+
+
+
+/* =========================================================== */
+
+
+
+.flex2{
+    display: flex;
+    height: 60vh;
+    width: 70vw;
+    margin: auto;
+    background-color: silver;
+}
+
+.item1{
+    height: 200px;
+    width: 100px;
+    background-color: sienna;
+    color: seashell;
+    margin: 4px;
+    flex: 1 1 auto;
+    /* 
+         "flex-grow - dando um valor positivo permite com que ele possa crescer";
+
+         "flex-shrink - dando um valor positivo permite com que ele possa encolher";
+
+         "flex-basis - dando um valor define como o valor da base para crescer e encolher de que ponto"
+
+         então na ordem: flex: "flex-grow" "flex-shrink" "flex-basis"
+     */
+}
+
+.item1 p{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;  
+    /* stretch flex-start flex-end */
+    /*
+        O align-itens alinha os itens em relação ao eixo transversal (de cima para baixo)
+    */
+    
+    justify-content: center;
+    /* stretch flex-start flex-end */
+    /*
+        O justify-content alinha os itens em relação ao eixo principal (do lado direito para o esquerdo)
+    */
+    
+}
+
+.item2{
+    flex: 1 1 auto;
+}
+
+.item3{
+    flex: 1 1 auto;
+}

@@ -1,6 +1,12 @@
+h1,h2,h3,h4,h5{
+    text-align: center;
+}
+
 .flex{
+    width: 70vw;
     height: 30vh;
     display: flex;
+    margin: auto;
 
     flex-direction: row-reverse;  
     /*o eixo inicia pelo lado direito */
@@ -99,3 +105,143 @@
 .item3{
     flex: 1 1 auto;
 }
+
+/* ====================================================== */
+
+
+
+.flex3{
+    /* height: 30vh; */
+    width: 70vw;
+    display: flex;
+    margin: auto;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* É possível alinhar os items individualmente usando o align-self */
+
+.flex3 > *:first-child {
+    align-self: stretch;
+}
+
+.itemflex1{
+    background-color: salmon;
+    color: black;
+    margin: 4px;
+    height: 200px;
+    width: auto;
+}
+
+.flex3 .itemflex2{
+    align-self: flex-start;
+}
+
+.itemflex2{
+    height: 140px; 
+    width: 100px;
+}
+
+.flex3 .itemflex3{
+    align-self: flex-end;
+}
+
+.itemflex3{
+    height: 140px; 
+    width: 300px;
+}
+
+
+.flex4{
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    align-content: space-between;
+    /* flex-direction: column; */
+
+    /* Usado para alinhar todo o conteudo do container */
+    /* 
+        align-content: flex-start
+        align-content: flex-end
+        align-content: center
+        align-content: space-between
+        align-content: space-around
+        align-content: stretch
+        align-content: space-evenly (not defined in the Flexbox specification) 
+    */
+}
+
+.flex4 div:nth-child(1){
+    background-color: cornflowerblue;
+    height: 100px;
+    width: 30%;
+    margin: 1%
+}
+
+.flex4 div:nth-child(2){
+    background-color: cornflowerblue;
+    height: 100px;
+    width: 30%;
+    margin: 1%
+}
+
+.flex4 div:nth-child(3){
+    background-color: cornflowerblue;
+    height: 100px;
+    width: 30%;
+    margin: 1%
+}
+
+.flex4 div:nth-child(4){
+    background-color: cornflowerblue;
+    height: 100px;
+    width: 30%;
+    margin: 1%
+}
+
+.flex4 div:nth-child(5){
+    background-color: cornflowerblue;
+    height: 100px;
+    width: 30%;
+    margin: 1%
+}
+
+.flex4 div:nth-child(6){
+    background-color: cornflowerblue;
+    height: 100px;
+    width: 30%;
+    margin: 1%
+}
+
+.flex4 div:nth-child(7){
+    background-color: cornflowerblue;
+    height: 100px;
+    width: 46%;
+    margin: 1%
+}
+
+.flex4 div:nth-child(8){
+    background-color: cornflowerblue;
+    height: 100px;
+    width: 46%;
+    margin: 1%
+}
+
+
+.flex5{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row /*column*/;
+    height: 500px;
+}
+
+.flex5 > div{
+    background-color: darkgoldenrod;
+    height: 100px;
+    width: 100%;
+    margin: 1%;
+}
+
+
+
+
